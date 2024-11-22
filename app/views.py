@@ -2,7 +2,6 @@ from django.shortcuts import render
 import numpy as np
 import pickle
 
-# Load the model and scaler
 with open('svm_model.pkl', 'rb') as model_file:
     classifier = pickle.load(model_file)
 
