@@ -2,10 +2,10 @@ from django.shortcuts import render
 import numpy as np
 import pickle
 
-with open('svm_model.pkl', 'rb') as model_file:
+with open('app/svm_model.pkl', 'rb') as model_file:
     classifier = pickle.load(model_file)
 
-with open('scaler.pkl', 'rb') as scaler_file:
+with open('app/scaler.pkl', 'rb') as scaler_file:
     scaler = pickle.load(scaler_file)
 
 def home(request):
